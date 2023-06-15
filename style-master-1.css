@@ -1,0 +1,106 @@
+.container {
+min-width: 375px;
+max-width: 1440px;
+margin: auto;
+padding: 20px;
+}
+body{
+    background-color: #e0e8ff;
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.payment:hover{
+background-color: hsl(224, 23%, 55%);
+}
+h1{
+    text-align: center;
+}
+h1,span {
+    color: hsl(223, 47%, 23%)
+}
+p{
+    margin: 25px;
+    text-align: center;
+    font-family: red hat display;
+    color: gray;
+}
+.parent {
+width: 400px;
+background-color: white;
+border-radius: 20px;
+/* box-shadow: 0px 0px 15px 0px black */
+}
+.Flex {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex2{
+    display: flex;
+    align-items: center;
+}
+span {
+        display: inline-block;
+            margin: 0 10px;
+            font-weight: bold;
+}
+b {
+    font-weight: normal;
+    color: gray;
+}
+.image {
+width:100% ;
+border-radius: 20px 20px 0px 0px;
+}
+.payment {
+    padding: 13px 20px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    width: 235px;
+    color: white;
+    box-shadow: 10px 10px 41px 1px #0072ff59;
+}
+.order,.payment{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.order {
+    --margin-both:26px;
+    margin-top: var(--margin-both);
+    margin-bottom: var(--margin-both);
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
+.order:hover{
+    color: hsl(223, 47%, 23%);
+}
+.attribution {
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.change {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: bold;
+}
+.change:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.change,
+.payment,
+.order{
+transition: linear 150ms ;
+}
